@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+    <title>
+     ToDo list:
+    </title>
+</head>
+ <body>
+  <h1>ToDo list</h1>
+
+  <header>
+  <div class="container">
+ <nav class="navbar">
+    <a hredf="/" class="nav-branding">TODO LIST:</a>
+    <ul class="nav-menu">
+      
+  <div class="sideBar">
+    <button id="buttonShow" type ="button" onclick="showElements()">Chip erstellen</button>
+    <button id="buttonChip" type ="button" onclick="addParameters()" style="display:none">Chip beenden</button>
+    <button id="buttonClose" type ="button" onclick="closeElements()" style="display:none">window schließen</button>
+    <button id="buttonErledigt" type="button" onclick="finishChip(colorChange)" style="display:none">Aufgabe erledigt</button>
+    <button id="buttonDelete" type="button" onclick="chipDelete()" style="display:none">Chip löschen</button>
+    </ul>
+    </nav>
+    <label id="labelUserID" for="userIDHtml" style="display:none">userID:</label>
+<input type="text" id="userIDHtml" name="userIDHtml" style="display:none" placeholder="userID" size="4">
+<label id="labelZiel" for="zielHtml" style="display:none">Ziel:</label>
+<input type="text" id="zielHtml" name="zielHtml" style="display:none" placeholder="ziel"
+ required minlength="4" required maxlength="100" size="50">
+<label id="labelDatum" for="datumHtml" style="display:none">Bis wann:</label>
+<input type="text" id="datumHtml" name="datumHtml" placeholder="dd.mm.yyyy" value="" min="1900-01-01" max="3000-12-31" style="display:none">
+
+  <div id="div2">
+  </div>
+</div>
+</header>
+
+<div id="div1">
+</div>
+
+<p><br></p>
+
+
+
+<script src="Index.js"> </script>
+ </body>
+</html>
